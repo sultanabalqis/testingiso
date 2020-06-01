@@ -26,3 +26,7 @@ Route::get('/admin/viewadmin', 'AdminController@view_admin')->name('adminview');
 Route::get('/admin/profil', 'AdminController@editprofil')->name('editprofil');
 Route::get('/admin/tambahadmin', 'AdminController@tambahadmin')->name('tambahadmin');
 Route::get('/admin/tambahbobot', 'AdminController@tambahbobot')->name('tambahbobot');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
